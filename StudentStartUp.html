@@ -4,30 +4,40 @@
     <title>StudentStartUp</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="main.css">
+    <script src="login.js"></script>
   </head>
   <body>
     <div class="mainBorder">
       <div class="header">
         <h1>StudentStartUp</h1>
       </div>
+      <div class="logInClass">
+        <form id="logIn" name="logIn" method="POST">
+          <input type="email" id="logEmail" name="logEmail" placeholder="E-mail">
+          <input type="password" id="logPassword" name="logPassword" placeholder="Lösenord">
+          <input type="submit" value="Logga in!" id="loginbtn">
+        </form>
+      </div>
       <div class="post">
-        <form name="inputPost" method="POST">
-          <label for="namn">Namn</label><br>
-          <input type="text" id="namn" name="namn" placeholder="För- och efternamn"><br><br>
+        <label for="postFrame">Ny på StudentStartUp? Regisrerar dig nedan!</label>
+        <form id="postFrame" onsubmit="return validate()" name="registerForm" method="POST">
+          <input type="text" id="namn" name="namn" placeholder="Fullständigt namn"><br><br>
 
-          <label for="mail">Mailadress</label><br>
-          <input type="email" id="mail" name="mail" placeholder="me@example.com"><br><br>
+          <input type="email" id="mail" name="mail" placeholder="E-post"><br><br>
 
-          <label for="annons">Annons</label><br>
-          <textarea id="annons" name="annons" placeholder="Skriv annons..."></textarea><br>
+          <input type="password" id="lösenord" name="lösenord" placeholder="Välj lösenord"></textarea><br><br>
 
-          <input type="submit" value="Posta annons" name="postbtn" id="postbtn">
+          <input type="password" id="valLösen" name="valLösen" placeholder="Upprepa lösenord"></textarea><br>
+
+          <input type="submit" value="Registrera dig!" name="regbtn" id="regbtn">
+        </form>
       </div>
       <div class="navigation">
         <ul id="menu">
-          <li>Lägg upp annons</li>
-          <li>Logga in</li>
-          <li>Registrera dig</li>
+          <li>Om oss</li>
+          <li>Hjälp</li>
+          <li>Kontakta oss</li>
+          <li>Våra villkor</li>
       </div>
     </div>
   </body>
