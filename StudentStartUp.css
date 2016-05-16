@@ -1,23 +1,47 @@
-.headerlogin {
-  background-color: lightblue;
-  border-radius: 5px;
-  padding: 1px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 200px;
-  width: 200px;
+body {
+  background-color: #E8E8E8;
 }
-.loginformation {
-  text-align: center;
-  background-color: lightblue;
-  border-radius: 5px;
+.header {
+  position: absolute;
+  left: 16%;
+  width: 65%;
+  background-color: #000000;
   padding: 5px;
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 300px;
-  padding-bottom: 20px;
+  color: white;
 }
-input[type="text"] {
-  width: 200px;
-  height: 20px;
+h1 {
+  background-color: black;
+  font-size: 50px;
+}
+.navigation {
+  position: relative;
+  top: 135px;
+  left: 211px;
+  background-color: #404040;
+  width: 170px;
+  height: 500px;
+}
+#menu {
+  background-color: #404040;
+  text-align: left;
+  list-style-type: none;
+  color: white;
+  padding: inherit;
+}
+li {padding: 7px;}
+ul li:hover{ background-color: green; }
+
+.post {
+  position: absolute;;
+  padding: inherit;
+  top: 27%;
+  left: 31%;
+}
+#namn, #mail {
+  width: 300px;
+  padding: 10px;
+}
+#annons {
+  width: 318px;
+  height: 100px;
 }
