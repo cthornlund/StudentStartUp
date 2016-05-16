@@ -1,3 +1,6 @@
+* {
+  font-family: arial, san-serif;
+}
 body {
   background-color: #E8E8E8;
 }
@@ -19,8 +22,43 @@ h1 {
   left: 211px;
   background-color: #404040;
   width: 170px;
-  height: 500px;
+  height: 535px;
 }
+.logInClass {
+  position: absolute;
+  padding: inherit;
+  top: 25%;
+  left: 31%;
+  border-radius: 4px;
+  border: thin outset black;
+  padding: 10px;
+  background-color: white;
+}
+#logEmail{
+  width: 260px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+#logPassword {
+  width: 190px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+#loginbtn {
+  background-color: green;
+  width: 105px;
+  color: white;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 15px;
+  margin: 10px;
+  border-radius: 4px;
+}
+
 #menu {
   background-color: #404040;
   text-align: left;
@@ -34,14 +72,27 @@ ul li:hover{ background-color: green; }
 .post {
   position: absolute;;
   padding: inherit;
-  top: 27%;
+  top: 42%;
   left: 31%;
+  border-radius: 4px;
+  border: thin outset black;
+  padding: 10px;
+  background-color: white;
 }
-#namn, #mail {
+#namn, #mail, #lösenord, #valLösen {
   width: 300px;
   padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  font-size: 14px;
 }
-#annons {
-  width: 318px;
-  height: 100px;
+#regbtn {
+  background-color: green;
+  width: 324px;
+  color: white;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 15px;
+  margin: 10px;
+  border-radius: 4px;
 }
