@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="main.css">
-    <title>studentstartup</title>
+    <title>StudentStartUp</title>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <div class="headerlogin">
-      <h1>Logga in</h1>
-    </div>
-    <div class="loginformation">
-      <form id="loginForm" name="loginForm" method="post">
-        <label id="inputnamn" for="namn">Användarnamn</label><br>
-        <input type="text" name="inputname" id="inputname"><br><br>
+    <div class="mainBorder">
+      <div class="header">
+        <h1>StudentStartUp</h1>
+      </div>
+      <div class="post">
+        <form name="inputPost" method="POST">
+          <label for="namn">Namn</label><br>
+          <input type="text" id="namn" name="namn" placeholder="För- och efternamn"><br><br>
 
-        <label for="lösenord">Lösenord</label><br>
-        <input type="text" name="lösenord" id="lösenord"><br><br>
+          <label for="mail">Mailadress</label><br>
+          <input type="email" id="mail" name="mail" placeholder="me@example.com"><br><br>
 
-        <input type="submit" value="Logga in" name="loginbtn" id="loginbtn">
+          <label for="annons">Annons</label><br>
+          <textarea id="annons" name="annons" placeholder="Skriv annons..."></textarea><br>
+
+          <input type="submit" value="Posta annons" name="postbtn" id="postbtn">
+      </div>
+      <div class="navigation">
+        <ul id="menu">
+          <li>Lägg upp annons</li>
+          <li>Logga in</li>
+          <li>Registrera dig</li>
+      </div>
     </div>
   </body>
 </html>
-
